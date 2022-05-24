@@ -1,0 +1,257 @@
+Namespace(adapter_reduction=None, add_adapter=False, add_canary=True, block_size=1024, canary_len=6, canary_rep=25, config_name=None, dataset_config_name=None, dataset_name='ptb_text_only', do_ref_model=False, eval_steps=100, gradient_accumulation_steps=8, hub_model_id=None, hub_token=None, learning_rate=5e-06, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, max_train_steps=None, model_name_or_path='gpt2', model_type=None, no_keep_linebreaks=False, num_train_epochs=20, num_warmup_steps=0, output_dir='./logs/', overwrite_cache=False, per_device_eval_batch_size=1, per_device_train_batch_size=1, preprocessing_num_workers=None, push_to_hub=False, seed=1234, tokenizer_name=None, train_file=None, train_head_only=False, train_layer_n_only=None, use_slow_tokenizer=False, validation_file=None, validation_split_percentage=5, weight_decay=0.0)
+before canary len  42068
+after canary len  42093
+5000
+model_params (million) 124.439808
+model_params (million) 124.439808
+training epoch 0
+*************end of epoch 0 eval 
+running canary eval
+0.181700132859311
+threshold is:  3.427603006362915
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 0: perplexity: 41.74138139007493 perplexity_train: 60.236186554683115
+____
+0.0
+41.74138139007493
+60.236186554683115
+_____
+training epoch 1
+*************end of epoch 1 eval 
+running canary eval
+0.41502812396192623
+threshold is:  3.3046951293945312
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 1: perplexity: 36.645747021883814 perplexity_train: 49.96578982398342
+____
+0.0
+36.645747021883814
+49.96578982398342
+_____
+training epoch 2
+*************end of epoch 2 eval 
+running canary eval
+0.9741627578460839
+threshold is:  3.2494966983795166
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 2: perplexity: 34.295753556933235 perplexity_train: 45.014575257536116
+____
+0.0
+34.295753556933235
+45.014575257536116
+_____
+training epoch 3
+*************end of epoch 3 eval 
+running canary eval
+1.7773264207098025
+threshold is:  3.2111921310424805
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 3: perplexity: 32.83853453591688 perplexity_train: 41.938895256580615
+____
+0.0
+32.83853453591688
+41.938895256580615
+_____
+training epoch 4
+*************end of epoch 4 eval 
+running canary eval
+2.6659997522160763
+threshold is:  3.188326597213745
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 4: perplexity: 31.889793176845753 perplexity_train: 39.94119345935422
+____
+0.0
+31.889793176845753
+39.94119345935422
+_____
+training epoch 5
+*************end of epoch 5 eval 
+running canary eval
+3.4757441770883823
+threshold is:  3.1538596153259277
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 5: perplexity: 31.19905250204416 perplexity_train: 38.41082310391478
+____
+0.0
+31.19905250204416
+38.41082310391478
+_____
+training epoch 6
+*************end of epoch 6 eval 
+running canary eval
+4.171314848893584
+threshold is:  3.117626428604126
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 6: perplexity: 30.721229723204424 perplexity_train: 37.24025851360186
+____
+0.0
+30.721229723204424
+37.24025851360186
+_____
+training epoch 7
+*************end of epoch 7 eval 
+running canary eval
+4.873253426055851
+threshold is:  3.103609561920166
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 7: perplexity: 30.23818529189222 perplexity_train: 36.283642007464586
+____
+0.0
+30.23818529189222
+36.283642007464586
+_____
+training epoch 8
+*************end of epoch 8 eval 
+running canary eval
+5.408175189477546
+threshold is:  3.094874382019043
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 8: perplexity: 29.9086882024113 perplexity_train: 35.514126731922204
+____
+0.0
+29.9086882024113
+35.514126731922204
+_____
+training epoch 9
+*************end of epoch 9 eval 
+running canary eval
+5.833666022758805
+threshold is:  3.088411331176758
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 9: perplexity: 29.662129182239614 perplexity_train: 34.88987739345634
+____
+0.0
+29.662129182239614
+34.88987739345634
+_____
+training epoch 10
+*************end of epoch 10 eval 
+running canary eval
+6.290874085060806
+threshold is:  3.0849246978759766
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 10: perplexity: 29.458528070427835 perplexity_train: 34.36975104511109
+____
+0.0
+29.458528070427835
+34.36975104511109
+_____
+training epoch 11
+*************end of epoch 11 eval 
+running canary eval
+6.605940491213744
+threshold is:  3.07995343208313
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 11: perplexity: 29.266251944977878 perplexity_train: 33.93944326155477
+____
+0.0
+29.266251944977878
+33.93944326155477
+_____
+training epoch 12
+*************end of epoch 12 eval 
+running canary eval
+6.894674114584403
+threshold is:  3.075084686279297
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 12: perplexity: 29.099003675126973 perplexity_train: 33.566301259004504
+____
+0.0
+29.099003675126973
+33.566301259004504
+_____
+training epoch 13
+*************end of epoch 13 eval 
+running canary eval
+7.161053906297137
+threshold is:  3.072570562362671
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 13: perplexity: 28.99051971503881 perplexity_train: 33.26842107998556
+____
+0.0
+28.99051971503881
+33.26842107998556
+_____
+training epoch 14
+*************end of epoch 14 eval 
+running canary eval
+7.340557373399999
+threshold is:  3.070162296295166
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+epoch 14: perplexity: 28.90316104303466 perplexity_train: 33.02947299109238
+____
+0.0009532888465204957
+28.90316104303466
+33.02947299109238
+_____
+training epoch 15
+*************end of epoch 15 eval 
+running canary eval
+7.492280310879684
+threshold is:  3.0679028034210205
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+epoch 15: perplexity: 28.79953358065267 perplexity_train: 32.82244923082914
+____
+0.0009532888465204957
+28.79953358065267
+32.82244923082914
+_____
+training epoch 16
+*************end of epoch 16 eval 
+running canary eval
+7.59665561456443
+threshold is:  3.067298412322998
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+epoch 16: perplexity: 28.75205080101539 perplexity_train: 32.686661411860975
+____
+0.0009532888465204957
+28.75205080101539
+32.686661411860975
+_____
+training epoch 17
+*************end of epoch 17 eval 
+running canary eval
+7.685971808924347
+threshold is:  3.0660505294799805
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+epoch 17: perplexity: 28.706678964965512 perplexity_train: 32.57942530502204
+____
+0.0009532888465204957
+28.706678964965512
+32.57942530502204
+_____
+training epoch 18
+*************end of epoch 18 eval 
+running canary eval
+7.732589963627735
+threshold is:  3.0654499530792236
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+epoch 18: perplexity: 28.68170848107129 perplexity_train: 32.51186348213792
+____
+0.0009532888465204957
+28.68170848107129
+32.51186348213792
+_____
+training epoch 19
+*************end of epoch 19 eval 
+running canary eval
+7.751408213818283
+threshold is:  3.065330982208252
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+epoch 19: perplexity: 28.6739139328996 perplexity_train: 32.492111083877205
+____
+0.0009532888465204957
+28.6739139328996
+32.492111083877205
+_____
+*************end of training 
+running canary eval
+7.751408213818283
+threshold is:  3.065330982208252
+correct cnt is:  1 all is:  1049 ratio is:  0.0009532888465204957
+end of training perplexity: 28.6739139328996 perplexity_train: 32.492111083877205
+____
+0.0009532888465204957
+28.6739139328996
+32.492111083877205
+_____

@@ -1,0 +1,53 @@
+Namespace(adapter_reduction=None, add_adapter=False, add_canary=True, block_size=1024, canary_len=6, canary_rep=25, config_name=None, dataset_config_name=None, dataset_name='ptb_text_only', do_ref_model=False, eval_steps=100, gradient_accumulation_steps=8, hub_model_id=None, hub_token=None, learning_rate=2e-05, lr_scheduler_type=<SchedulerType.LINEAR: 'linear'>, max_train_steps=None, model_name_or_path='gpt2', model_type=None, no_keep_linebreaks=False, num_train_epochs=3, num_warmup_steps=0, output_dir='./logs/', overwrite_cache=False, per_device_eval_batch_size=1, per_device_train_batch_size=1, preprocessing_num_workers=None, push_to_hub=False, seed=1234, tokenizer_name=None, train_file=None, train_head_only=False, train_layer_n_only=None, use_slow_tokenizer=False, validation_file=None, validation_split_percentage=5, weight_decay=0.0)
+before canary len  42068
+after canary len  42093
+5000
+model_params (million) 124.439808
+model_params (million) 124.439808
+training epoch 0
+*************end of epoch 0 eval 
+running canary eval
+1.2716028556607337
+threshold is:  3.2343873977661133
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 0: perplexity: 33.710348287544335 perplexity_train: 43.53833545041676
+____
+0.0
+33.710348287544335
+43.53833545041676
+_____
+training epoch 1
+*************end of epoch 1 eval 
+running canary eval
+3.501432876533905
+threshold is:  3.1597506999969482
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 1: perplexity: 31.298663039243834 perplexity_train: 38.43551145083716
+____
+0.0
+31.298663039243834
+38.43551145083716
+_____
+training epoch 2
+*************end of epoch 2 eval 
+running canary eval
+4.334917899793033
+threshold is:  3.1256983280181885
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+epoch 2: perplexity: 30.76861187020549 perplexity_train: 37.290795213925904
+____
+0.0
+30.76861187020549
+37.290795213925904
+_____
+*************end of training 
+running canary eval
+4.334917899793033
+threshold is:  3.1256983280181885
+correct cnt is:  0 all is:  1049 ratio is:  0.0
+end of training perplexity: 30.76861187020549 perplexity_train: 37.29080410474537
+____
+0.0
+30.76861187020549
+37.29080410474537
+_____

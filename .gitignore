@@ -1,0 +1,9 @@
+./gen/logs
+./gen/__pycache__
+gen/__pycache__/
+gen/logs/
+gen/canaries/
+gen/wikipedia/logs/
+gen/canaries/
+gen/enron/logs/
+gen/enron/data/
