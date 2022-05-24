@@ -35,6 +35,14 @@ cd gen/wikipedia
 bash run_clm_head_ft_1gpu.sh 
 ```
 
+For running fine-tuning and evaluating memorization using the exposure metric, you can run:
+
+```bash
+cd gen/wikipedia
+bash  run_clm_full_ft_canaries_1gpu.sh 
+```
+
+You can change the dataset/fine-tuning method to run the other experiments. 
 
 # Extracting the Metrics from the Logs and Drawing Plots
 
