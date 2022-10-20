@@ -798,7 +798,7 @@ def main():
         if args.do_ref_model:
             losses_ref = torch.cat(losses_ref)
             losses_ref = losses_ref[: len(eval_dataset)]
-            sorted_ratio = sorted([l/l_ref for l,l_ref in zip (losses,losses_ref)])
+            sorted_ratio = sorted([l-l_ref for l,l_ref in zip (losses,losses_ref)])
         
         sorted_loss = sorted(losses)
         
@@ -870,7 +870,7 @@ def main():
         if args.do_ref_model:
             losses_ref = torch.cat(losses_ref)
             losses_ref = losses_ref[: len(train_dataset)]
-            lr_rat = [l/l_r for l,l_r in zip(losses,losses_ref)]
+            lr_rat = [l-l_r for l,l_r in zip(losses,losses_ref)]
             
         if args.do_ref_model:
             guess_cor = sum([1 for sample in losses if sample<threshold])
@@ -939,7 +939,7 @@ def main():
     if args.do_ref_model:
         losses_ref = torch.cat(losses_ref)
         losses_ref = losses_ref[: len(eval_dataset)]
-        sorted_ratio = sorted([l/l_ref for l,l_ref in zip (losses,losses_ref)])
+        sorted_ratio = sorted([l-l_ref for l,l_ref in zip (losses,losses_ref)])
     
     sorted_loss = sorted(losses)
     
@@ -992,7 +992,7 @@ def main():
     if args.do_ref_model:
         losses_ref = torch.cat(losses_ref)
         losses_ref = losses_ref[: len(train_dataset)]
-        lr_rat = [l/l_r for l,l_r in zip(losses,losses_ref)]
+        lr_rat = [l-l_r for l,l_r in zip(losses,losses_ref)]
         
     if args.do_ref_model:
         guess_cor = sum([1 for sample in losses if sample<threshold])
